@@ -1,0 +1,369 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat/Montserrat.ttf") format("woff")
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #171717;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 5px solid black;  /* creates padding around scroll thumb */
+}
+
+mark{
+    color: #D4B26F;
+    background: none
+}
+
+.body-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1070px 1fr;
+    margin-bottom: 164px;
+}
+
+.nav-bar{
+    height: 69px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 49px;
+}
+
+.nav-logo-wrap{
+    background-color: #D4B26F;
+    width: 61px;
+    height: 69px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.nav-logo-small{
+    background-image: url("../assets/KSI-logo-black.svg");
+    width: 47px;
+    height: 49px;
+}
+
+.nav-pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 52px;
+}
+
+.nav-pages > span{
+    cursor: pointer;
+}
+
+.nav-right-side{
+    display: flex;
+    flex-direction: row;
+    gap: 49px
+}
+
+.nav-points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 82px;
+    height: 32px;
+    border: 1px solid #D4B26F;
+    border-radius: 14px;
+}
+
+.nav-points > span{
+    cursor: default;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 66px;
+    margin-top: 116px;
+}
+
+.title-full-logo{
+    background-image: url("../assets/full-logo-2.svg");
+    background-size: 323px;
+    width: 323px;
+    height: 97px;
+}
+
+.title-eye{
+    position: absolute;
+    background-image: url("../assets/eye.png");
+
+    width: 173px;
+    height: 108px;
+    margin-left: 210px;
+    margin-top: 45px;
+}
+
+.title-page{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 141px;
+    line-height: 118px;
+
+    color: #FFFFFF;
+}
+
+.groups{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 198px;
+
+    margin-top: 102px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+}
+
+.group-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.group-title-text{
+    width: 134px;
+    height: 28px;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.group-title-points{
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 8px 22px;
+
+
+    width: 83px;
+    height: 32px;
+
+    border: 1px solid #D4B26F;
+    border-radius: 14px;
+}
+
+.group-title-points-text{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+
+    text-align: center;
+    text-transform: lowercase;
+
+    color: #FFFFFF;
+
+}
+
+.group-line{
+    width: 400px;
+    height: 0;
+    margin-top: 35px;
+
+    border: 1px solid #2B2B2B;
+}
+
+.group-teams{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    margin-top: 30px;
+}
+
+.group-team{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.group-team-position-wrap{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-team-position{
+    width: 14px;
+    height: 28px;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 28px;
+
+    color: #ffffff;
+}
+
+.group-team-card{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 339px;
+    height: 118px;
+    padding: 17px 14px 17px 28px;
+
+    background: linear-gradient(90deg, #0D0D0D 16.34%, rgba(13, 13, 13, 0.39) 88.17%);
+    border: 1px solid #000000;
+    border-radius: 24px;
+}
+
+.group-team-logo{
+    width: 84px;
+    height: 84px;
+}
+
+.group-team-title{
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.prizes-wrap{
+    margin-top: 141px;
+
+    display: grid;
+    grid-template-columns: 1fr 863px 1fr;
+}
+
+.prizes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.prizes-line{
+    position: absolute;
+
+    margin-left: 20px;
+    margin-top: 85px;
+
+    width: 822px;
+    height: 3px;
+
+    background: linear-gradient(270deg, #D4B26F 0%, #B49154 17.2%, #3E2608 96.61%);
+}
+
+.prize{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.prize-picGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prize-picGroup-picture{
+
+    width: 78px;
+    height: 81px;
+}
+
+.prize-picGroup-round{
+    width: 12px;
+    height: 12px;
+
+    z-index: 10;
+
+    border-radius: 50%;
+    background: #EEB75B;
+}
+
+.prize-pts{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.prize-describe{
+    width: 70px;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.nav-right-side{
+    display: flex;
+    flex-direction: row;
+    gap: 49px
+}

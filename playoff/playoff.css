@@ -1,0 +1,212 @@
+.playoff-wrap{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    align-items: center;
+}
+
+.playoff-day{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.playoff-day-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playoff-day-head-text{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+
+    text-transform: uppercase;
+
+    color: #D4B26F;
+}
+
+.playoff-day-head-line{
+    width: 994px;
+    height: 0;
+
+    border: 1px solid #1C1C1C;
+}
+
+.playoff-day-games{
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    align-items: center;
+}
+
+.playoff-day-game{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.game-info{
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+}
+
+.game-info-predict{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+
+    justify-content: center;
+    align-items: center;
+}
+
+.game-info-predict-gameNum{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.pts-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 82px;
+    height: 32px;
+
+    border: 1px solid #D4B26F;
+    border-radius: 14px;
+}
+
+.pts-wrap > div{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: lowercase;
+
+    color: #FFFFFF;
+}
+
+.game-info-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 9px;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+
+    text-transform: uppercase;
+
+    color: #D4B26F;
+}
+
+.game-teams{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+}
+
+.game-teams-vs{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    /* or 92% */
+
+
+    color: #FFFFFF;
+}
+
+.team{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 16px 19px;
+
+    width: 381px;
+    height: 81px;
+
+    border: 1px solid #D4B26F;
+    border-radius: 24px;
+
+    cursor: pointer;
+}
+
+.team-match{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.team-logo{
+    position: absolute;
+    background-size: 100px;
+
+    background-position: center;
+    width: 100px;
+    height: 100px;
+
+    transition: all 0.2s ease;
+}
+
+.team-logo-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 65px;
+    height: 65px;
+}
+
+.team-name{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 153% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.lose{
+    filter: grayscale(100%);
+}

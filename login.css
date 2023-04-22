@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("assets/fonts/Montserrat/Montserrat.ttf") format("woff")
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+mark{
+    color: #D4B26F;
+    background: none
+}
+
+.body-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1070px 1fr;
+}
+
+.nav-bar{
+    height: 69px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 169px;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 49px;
+}
+
+.nav-logo-wrap{
+    background-color: #D4B26F;
+    width: 61px;
+    height: 69px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.nav-logo-small{
+    background-image: url("assets/KSI-logo-black.svg");
+    width: 47px;
+    height: 49px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+
+    margin-top: 83px;
+}
+
+.title-logo-ultra-big{
+    background-image: url("assets/KSI-logo-natural.svg");
+    width: 289px;
+    height: 296px;
+}
+
+.title-second{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.title-full-logo{
+    margin-left: 7px;
+    background-image: url("assets/full-logo-3.svg");
+    background-size: 437px;
+
+    width: 437px;
+    height: 132px;
+}
+
+.title-text{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 122px;
+
+    color: #FFFFFF;
+}
+
+.login{
+    margin-top: 153px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.login-describe-text{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+}
+
+.login-button{
+    display: flex;
+    flex-direction: row;
+    gap: 69px;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 15px 31px;
+
+    width: 472px;
+    height: 74px;
+    background: #772AEB;
+    border: 1px solid #000000;
+    border-radius: 21px;
+
+    cursor: pointer;
+}
+
+.login-twitch-ico{
+    background-image: url("assets/twitch-ico.svg");
+
+    width: 39px;
+    height: 44px;
+}
+
+.login-text{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+
+    color: #000000;
+
+}
+
+.prizes-wrap{
+    margin-top: 141px;
+
+    display: grid;
+    grid-template-columns: 1fr 863px 1fr;
+}
+
+.prizes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.prizes-line{
+    position: absolute;
+
+    margin-left: 20px;
+    margin-top: 85px;
+
+    width: 822px;
+    height: 3px;
+
+    background: linear-gradient(270deg, #D4B26F 0%, #B49154 17.2%, #3E2608 96.61%);
+}
+
+.prize{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.prize-picGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prize-picGroup-picture{
+
+    width: 78px;
+    height: 81px;
+}
+
+.prize-picGroup-round{
+    width: 12px;
+    height: 12px;
+
+    z-index: 10;
+
+    border-radius: 50%;
+    background: #EEB75B;
+}
+
+.prize-pts{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.prize-describe{
+    width: 70px;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.forbidden{
+    margin-top: 153px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}

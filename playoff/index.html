@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playoff</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<!--   Анбуш Убери это-->
+  <link rel="stylesheet" href="../groups/groups.css">
+  <link rel="stylesheet" href="playoff.css">
+</head>
+<body>
+<div class="body-wrap">
+  <div></div>
+  <div>
+    <div class="nav-bar">
+      <div class="main">
+        <div class="nav-logo-wrap">
+          <div class="nav-logo-small"></div>
+        </div>
+        <span style="cursor: pointer">На главную</span>
+      </div>
+      <div class="nav-pages">
+        <span onclick="window.location.href = '../groups'">Group <mark>stage</mark></span>
+        <span onclick="window.location.href = '../extraSense'">битва <mark>экстрасенсов</mark></span>
+        <span onclick="window.location.href = '../playoff'">Play <mark>off</mark></span>
+      </div>
+      <div class="nav-right-side">
+        <div class="nav-points" style="background: #E0A957; cursor: pointer" onclick="logOut()">
+          <span style="text-transform: none; color: black; cursor: pointer;">Logout</span>
+        </div>
+        <div class="nav-points">
+          <span style="text-transform: lowercase">80 pts</span>
+        </div>
+      </div>
+    </div>
+    <div class="title-eye"></div>
+    <div class="title">
+      <div class="title-full-logo"></div>
+      <span class="title-page">PICK <mark>EM</mark></span>
+    </div>
+    <div class="playoff-wrap">
+      <div class="playoff-day">
+        <div class="playoff-day-head">
+          <div class="playoff-day-head-text">14.04</div>
+          <div class="playoff-day-head-line"></div>
+        </div>
+        <div class="playoff-day-games">
+          <div class="playoff-day-game" id="game6">
+            <div class="game-info">
+              <div class="game-info-predict">
+                <div class="game-info-predict-gameNum">2 игра</div>
+                <div class="pts-wrap">
+                  <div>5 pts</div>
+                </div>
+              </div>
+              <div class="game-info-side">
+                <div>16:00</div>
+                <div>BO3</div>
+              </div>
+            </div>
+            <div class="game-teams">
+              <div class="team" onclick="pickTeam(event)" id="team1">
+                <div class="team-logo-wrap"><div class="team-logo lose" style="background-image: url('../assets/teamLogos/likrit.svg')"></div></div>
+                <div class="team-name">Лазаньи<br> ликкрита</div>
+              </div>
+              <div class="game-teams-vs">VS</div>
+              <div class="team" onclick="pickTeam(event)" id="team2">
+                <div class="team-logo-wrap"><div class="team-logo lose" style="background-image: url('../assets/teamLogos/nomanz.svg')"></div></div>
+                <div class="team-name">Единороги<br>Номанза</div>
+              </div>
+            </div>
+          </div>
+          <div class="playoff-day-games">
+            <div class="playoff-day-game" id="game4">
+              <div class="game-info">
+                <div class="game-info-predict">
+                  <div class="game-info-predict-gameNum">1 игра</div>
+                  <div class="pts-wrap">
+                    <div>5 pts</div>
+                  </div>
+                </div>
+                <div class="game-info-side">
+                  <div>16:00</div>
+                  <div>BO3</div>
+                </div>
+              </div>
+              <div class="game-teams">
+                <div class="team" onclick="pickTeam(event)" id="team3">
+                  <div class="team-logo-wrap"><div class="team-logo lose" style="background-image: url('../assets/teamLogos/likrit.svg')"></div></div>
+                  <div class="team-name">Лазаньи<br> ликкрита</div>
+                </div>
+                <div class="game-teams-vs">VS</div>
+                <div class="team" onclick="pickTeam(event)" id="team4">
+                  <div class="team-logo-wrap"><div class="team-logo lose" style="background-image: url('../assets/teamLogos/nomanz.svg')"></div></div>
+                  <div class="team-name">Единороги<br>Номанза</div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="prizes-wrap">
+      <div></div>
+      <div class="prizes">
+        <div class="prizes-line"></div>
+        <div class="prize">
+          <div class="prize-picGroup">
+            <div class="prize-picGroup-picture" style="background-image: url('../assets/prizes/x1.png')"></div>
+            <div class="prize-picGroup-round"></div>
+          </div>
+          <span class="prize-pts">120 <mark>pts</mark></span>
+          <span class="prize-describe">1 случайный скин</span>
+        </div>
+        <div class="prize">
+          <div class="prize-picGroup">
+            <div class="prize-picGroup-picture" style="background-image: url('../assets/prizes/x3.png')"></div>
+            <div class="prize-picGroup-round"></div>
+          </div>
+          <span class="prize-pts">130 <mark>pts</mark></span>
+          <span class="prize-describe">3 случайных скина <mark>или 1500 RP</mark></span>
+        </div>
+        <div class="prize">
+          <div class="prize-picGroup">
+            <div class="prize-picGroup-picture" style="background-image: url('../assets/prizes/x5.png')"></div>
+            <div class="prize-picGroup-round"></div>
+          </div>
+          <span class="prize-pts">140 <mark>pts</mark></span>
+          <span class="prize-describe">5 случайных скинов <mark>или 2500 RP</mark></span>
+        </div>
+        <div class="prize">
+          <div class="prize-picGroup">
+            <div class="prize-picGroup-picture" style="background-image: url('../assets/prizes/x7.png')"></div>
+            <div class="prize-picGroup-round"></div>
+          </div>
+          <span class="prize-pts">150 <mark>pts</mark></span>
+          <span class="prize-describe">7 случайных скинов <mark>или 4500 RP</mark></span>
+        </div>
+        <div class="prize">
+          <div class="prize-picGroup">
+            <div class="prize-picGroup-picture" style="background-image: url('../assets/prizes/final.png')"></div>
+            <div class="prize-picGroup-round"></div>
+          </div>
+          <span class="prize-pts">160 <mark>pts</mark></span>
+          <span class="prize-describe" style="width: 81px;">3 легендарных скина на выбор <mark>или 6000 RP</mark></span>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div></div>
+</div>
+<script src="playoff.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat/Montserrat.ttf") format("woff")
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+mark{
+    color: #D4B26F;
+    background: none
+}
+
+.body-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1070px 1fr;
+}
+
+.nav-bar{
+    height: 69px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 49px;
+}
+
+.nav-logo-wrap{
+    background-color: #D4B26F;
+    width: 61px;
+    height: 69px;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.nav-logo-small{
+    background-image: url("../assets/KSI-logo-black.svg");
+    width: 47px;
+    height: 49px;
+}
+
+.nav-pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 52px;
+}
+
+.nav-pages > span{
+    cursor: pointer;
+}
+
+.nav-points{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 82px;
+    height: 32px;
+    border: 1px solid #D4B26F;
+    border-radius: 14px;
+}
+
+.nav-points > span{
+    cursor: default;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 66px;
+    margin-top: 116px;
+}
+
+.title-full-logo{
+    background-image: url("../assets/full-logo-2.svg");
+    background-size: 323px;
+    width: 323px;
+    height: 97px;
+}
+
+.title-eye{
+    position: absolute;
+    background-image: url("../assets/eye.png");
+
+    width: 173px;
+    height: 108px;
+    margin-left: 210px;
+    margin-top: 45px;
+}
+
+.title-page{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 141px;
+    line-height: 118px;
+
+    color: #FFFFFF;
+}
+
+.soon-wrap{
+    margin-top: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 79px;
+}
+
+.soon-wrap > span{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 83px;
+    line-height: 85px;
+
+    text-align: center;
+    text-transform: lowercase;
+
+    color: #FFFFFF;
+}
+
+.soon-wrap > div{
+    width: 348px;
+    height: 348px;
+    background-image: url("../assets/Goodbye.svg");
+}

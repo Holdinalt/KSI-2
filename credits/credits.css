@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat.ttf") format("woff")
+}
+
+body{
+  background-color: black;
+  margin: 43px 63px 0 63px;
+}
+
+.body-wrap{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.players-wrap{
+  width: 1062px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.title{
+  width: 804px;
+  height: 239px;
+}
+
+.logos{
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.title-text{
+  font-family: 'Montserrat', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 117px;
+  line-height: 118px;
+}
+
+.commands-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  width: 858px;
+  margin-left: 40px;
+}
+
+.credit{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.credit-title{
+  font-family: 'Montserrat', serif;
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 40px;
+  height: 75px
+}
+
+.credit-describe{
+  font-family: 'Montserrat', serif;
+  font-style: normal;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 25px;
+  height: 75px
+}
+
+
+.vertical-line{
+  width: 0;
+  height: 865px;
+  border: 1px solid #191919;
+}
+
+.logo-Test-ez{
+
+}
