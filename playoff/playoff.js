@@ -33,9 +33,8 @@ const pickTeam = (event) => {
     }
 }
 
-const teamPicked = (gameID, pickedTeam) =>
-{
-    SavePlayoffPickem(gameID, pickedTeam);
+const teamPicked = (gameID, pickedTeam) => {
+    // Logic
 }
 
 const styleTeamLogos = (winTeamLogo, loseTeamLogo) => {
@@ -92,59 +91,3 @@ const pickCascade = (idWinCard, idRelatedCard) => {
 }
 // Изначальная карта teamID, куда вписать teamID
 // pickCascade(4, 1)
-
-function LoadPlayoffsPickem()
-{
-    var MAX_MATCHES = 30;
-
-    var bodyData =
-    {
-        dataReq :
-        {
-        }
-    };
-
-    $.post("pages/loadPlayoffsPickem.php", bodyData.dataReq, function(data)
-    {
-        var dataString = data;
-        for (var index = 0; index < MAX_MATCHES; ++index)
-        {
-            var pickemRow = dataString.split('$$')[index];
-
-            if (!pickemRow || pickemRow == '')
-            {
-                break;
-            }
-
-            var matchID = pickemRow.split(';;')[0];
-            var choosenTeamID = pickemRow.split(';;')[1];
-
-            setTeamPick(matchID, choosenTeamID);
-        }
-    });
-}
-
-function SavePlayoffPickem(p_GameID, p_PickedTeam)
-{
-    var bodyData =
-    {
-        dataReq :
-        {
-        }
-    };
-
-    var GameID = p_GameID.replace(/[^0-9]/g, '');
-    var PickedTeam = p_PickedTeam.replace(/[^0-9]/g, '');
-
-    bodyData.dataReq["matchID"] = GameID;
-    bodyData.dataReq["choosenTeamID"] = PickedTeam;
-
-    $.post("pages/sendPlayoffsPickem.php", bodyData.dataReq, function(data)
-    {
-    });
-}
-
-window.onload = () =>
-{
-    LoadPlayoffsPickem();
-}
