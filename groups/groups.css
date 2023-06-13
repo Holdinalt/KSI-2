@@ -367,3 +367,7 @@ mark{
     flex-direction: row;
     gap: 49px
 }
+
+.hide{
+    transform:translateX(-9999px);
+}
